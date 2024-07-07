@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Downloader</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body>
+    <form action="/download" method="get">
+        <label for="url">Enter YouTube URL:</label>
+        <input value="" type="text" name="url" id="url" placeholder="https://youtube.com/****" autocomplete="off">
+        <div id="video-card">
+            <div class="container">
+                <img src="../static/img/placeholder.png">
+                <div class="title"></div>
+                <div class="meta">
+                    <div class="views"></div>
+                    <div class="length"></div>
+                </div>
+            </div>
+        </div>
+        <button id="download">Download</button>
+    </form>
+
+    <!-- scripts -->
+    <script src="../static/js/jquery-3.7.1.min.js"></script>
+    <script src="../static/js/main.js"></script>
+</body>
+
+</html>
